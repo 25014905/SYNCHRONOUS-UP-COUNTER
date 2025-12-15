@@ -32,40 +32,58 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **PROGRAM**
 
+
 ```
+UP COUNTER
 module ex11(out,clk,rst);
-
 input clk,rst;
-
 output reg [3:0]out;
-
 always @ (posedge clk)
-
 begin
-
-if(rst)
-
-out<=0;
-
-else
-
-out <= out+1;
-
+   if(rst)
+     out<=0;
+   else 
+     out <= out+1;
 end
-
 endmodule
-```
 
+DOWN COUNTER
+module ex12(out,clk,rst);
+input clk,rst;
+output reg [3:0]out;
+always @ (posedge clk)
+begin
+   if(rst)
+     out<=0;
+   else 
+     out <= out-1;
+end
+endmodule
+
+```
 Developed by:MIRDULA D  RegisterNumber:25014905
 */
 
 **RTL LOGIC UP COUNTER**
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/11a47a02-f343-4eba-b9da-a186e41bed3b" />
+UP COUNTER
+
+<img width="1919" height="1041" alt="image" src="https://github.com/user-attachments/assets/5c3f636b-5b8f-41c9-a5b1-0c21bd5cc0f3" />
+
+DOWN COUNTER
+
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/48ab39b3-8c05-4394-ad3a-0056e693c101" />
 
 **TIMING DIAGRAM FOR IP COUNTER**
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/129973aa-b46e-464f-90be-94e994a7c56c" />
+UP COUNTER
+
+<img width="1919" height="1019" alt="image" src="https://github.com/user-attachments/assets/102b7bcc-7777-4b2f-9360-a81311d23403" />
+
+DOWN COUNTER
+
+<img width="1917" height="1017" alt="image" src="https://github.com/user-attachments/assets/bcfe5739-b9e4-4cdb-aa45-8fb2a5b5911a" />
+
 
 **TRUTH TABLE**
 
@@ -73,5 +91,5 @@ Developed by:MIRDULA D  RegisterNumber:25014905
 
 **RESULT**
 
- THus SYNCHRONOUS-UP-COUNTER is executed successfully.
+Thus the 4 bit synchronous up counter and down counter validate functionality was executed successfully.
 
