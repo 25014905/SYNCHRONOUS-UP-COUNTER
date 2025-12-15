@@ -75,5 +75,3 @@ Developed by:MIRDULA D  RegisterNumber:25014905
 
  THus SYNCHRONOUS-UP-COUNTER is executed successfully.
 
-
-**RESULTS**
